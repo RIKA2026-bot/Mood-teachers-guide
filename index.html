@@ -12,16 +12,27 @@
         .brand-purple { color: #372a74; }
         .bg-brand-purple { background-color: #372a74; }
         .brand-pink { color: #ff66c4; }
-        .bg-brand-pink { background-color: #ff66c4; }
         .brand-blue { color: #91e3fb; }
         .gradient-brand { background: linear-gradient(90deg, #91e3fb 0%, #ff66c4 100%); }
-        .screenshot { border: 2px solid #e2e8f0; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); margin-top: 1rem; margin-bottom: 2rem; max-width: 100%; height: auto; }
-        .step-number { display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 9999px; font-weight: 700; color: white; background: linear-gradient(135deg, #372a74, #ff66c4); margin-left: 0.75rem; }
+        
+        /* עיצוב משופר ומוקטן לצילומי המסך */
+        .screenshot { 
+            border: 1px solid #e2e8f0; 
+            border-radius: 8px; 
+            box-shadow: 0 10px 25px -5px rgba(55, 42, 116, 0.15); 
+            margin: 1.5rem auto 2.5rem auto; /* מרכוז וריווח */
+            max-width: 85%; /* הגבלת הרוחב כדי שלא יתפרסו על כל המסך */
+            height: auto; 
+            display: block;
+            background-color: white;
+            padding: 4px; /* מסגרת לבנה עדינה סביב התמונה */
+        }
+        
+        .step-number { display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 9999px; font-weight: 700; color: white; background: linear-gradient(135deg, #372a74, #ff66c4); margin-left: 0.75rem; flex-shrink: 0;}
     </style>
 </head>
 <body class="text-gray-800 leading-relaxed">
 
-    <!-- Header -->
     <header class="bg-brand-purple text-white py-12 px-6 text-center border-b-[8px] border-[#ff66c4]">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">פשוט בעברית – פותחים מרחב למידה כיתתי</h1>
@@ -33,7 +44,6 @@
 
     <main class="max-w-4xl mx-auto py-10 px-6">
         
-        <!-- התרשים -->
         <section class="bg-white rounded-2xl p-8 shadow-sm mb-12 border border-gray-100 text-center">
             <h2 class="text-2xl brand-purple font-bold mb-6">איך זה עובד?</h2>
             <div class="flex flex-wrap justify-center items-center gap-2 md:gap-4 font-semibold text-sm md:text-lg">
@@ -50,7 +60,6 @@
             </div>
         </section>
 
-        <!-- חלק א' -->
         <section class="mb-16">
             <h2 class="text-3xl brand-purple font-bold mb-8 border-b-2 border-[#91e3fb] pb-2 inline-block">חלק א׳ – פתיחת מרחב כיתתי</h2>
             
@@ -91,7 +100,6 @@
             </div>
         </section>
 
-        <!-- חלק ב' -->
         <section class="mb-16">
             <h2 class="text-3xl brand-purple font-bold mb-8 border-b-2 border-[#91e3fb] pb-2 inline-block">חלק ב׳ – ייבוא חומרי התוכנית למרחב</h2>
             
@@ -107,7 +115,7 @@
 
             <div class="mb-8">
                 <h3 class="text-xl font-semibold mb-2 flex items-center"><span class="step-number">3</span> ייבאו את החומרים מתוך סביבת ״פשוט בעברית - מרחב לשכפול״</h3>
-                <p class="mb-4">לחצו על "הבא" במסכים עד לסיום פעולת הייבוא.</p>
+                <p class="mb-4 text-gray-600">לחצו על "הבא" במסכים עד לסיום פעולת הייבוא.</p>
                 <img src="import-from-course.png.png" alt="יבוא תכנים" class="screenshot">
                 <img src="next-all.png.png" alt="הבא" class="screenshot">
                 <img src="perform-import.png.png" alt="בצע ייבוא" class="screenshot">
@@ -119,7 +127,6 @@
             </div>
         </section>
 
-        <!-- חלק ג' -->
         <section class="mb-16">
             <h2 class="text-3xl brand-purple font-bold mb-8 border-b-2 border-[#91e3fb] pb-2 inline-block">חלק ג׳ – עריכת שם המרחב ותמונת באנר</h2>
             
@@ -135,7 +142,6 @@
             </div>
         </section>
         
-        <!-- Checklist -->
         <section class="bg-[#372a74] text-white rounded-2xl p-8 shadow-lg mb-12">
             <h2 class="text-2xl font-bold mb-6 text-[#91e3fb]">בדיקה לפני שמתחילים:</h2>
             <ul class="space-y-4 text-lg">
